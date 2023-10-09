@@ -1,0 +1,212 @@
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+    
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@900&family=Noto+Sans:ital,wght@1,900&family=Playfair+Display:ital,wght@1,500&family=Roboto+Slab&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Sans-Serif;
+ }
+body{
+  background-color: #063970;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  
+  
+  
+}
+#header{
+     width: 100%;
+     background-color: #F19505;
+     box-shadow: #eab676;
+     
+}  
+
+#navbar{
+  width: 100%;
+  padding-bottom: 60px;
+  box-shadow: 2px 2px 30px brown;
+}
+.icon{
+  
+}
+.icon  img{
+  width: 40px;
+  margin: 10px;
+}
+.icon-a{
+  border: 2px solid white;
+  width: 500px;
+  margin-left: 350px;
+  box-shadow: 2px 2px 30px white;
+}
+.icon-a i{
+  margin-left: 20px;
+  color: white;
+}
+
+.icon-a  input{
+  border: none;
+  outline: none;
+  width: 400px;
+  border-radius: 5px;
+  height: 40px;
+  padding-left: 40px;
+  background-color: transparent;
+  color: white;
+  font-family: bold;
+  
+  
+}
+  input:placeholder{
+  color: white;
+}
+#menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#menu   ul{
+  list-style: none;
+  display: flex;
+ 
+}
+#menu   ul a{
+  text-decoration: none;
+  margin: 50px;
+  font-family: bold;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+#menu   ul a:hover{
+  box-shadow: 2px 2px 2px white;
+}
+#logo h1{
+    color: white;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    animation-name: type;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes type{
+  from{
+         width: 20px;
+  }
+}
+
+
+.ticker-wrap {
+  width: 100%;
+  height: 80px;
+  margin-left: 0px;
+  margin-top: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  bottom: 0;
+  height: 3.6rem;
+  background-color: red;
+  overflow-x: scroll;
+}
+.ticker {
+  display: inline-block;
+  margin-top: 5px;
+  animation: marquee 20s linear infinite;
+}
+.item-collection-1 {
+  position: relative;
+  left: 0%;
+  animation: swap 20s linear infinite;
+}
+
+.item {
+  display: inline-block;
+  padding: 0 1rem;
+  font-size: 2rem;
+  color: black;   
+  font-weight: 800;
+  font-family: sans-serif;
+}
+
+/* Transition */
+@keyframes marquee {
+  0% {
+    transform: translateX(0)
+  }
+  100% {
+    transform: translateX(-100%)
+  }
+}
+
+@keyframes swap {
+  0%, 50% {
+    left: 0%;
+  }
+  50.01%,
+  100% {
+    left: 100%;
+  }
+}
+#logo{
+  border: 4px solid yellow;
+  width: 80%;
+  margin-top: 50px;
+  margin-left: 10%;
+  padding-right: 20px;
+}
+#logo img{
+  margin: 100px;
+  width: 550px;
+  height: 200px;
+}
+#logo h1{
+   align-items: center;
+   justify-content: center;
+   margin-left: 40%;
+   font-display: flex;
+}
+#logo h2{
+ 
+    color: white;
+    margin-left: 50%;
+   
+}
+#logo h3{
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  animation-name: ani;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+#container{
+  width: 500px;
+  margin-top: 60px;
+  margin-left: 50%;
+}
+#container button{
+  width: 100px;
+  margin-left: 20%;
+  height: 50px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: yellow;
+  color: red;
+  font-size: 20px;
+}
